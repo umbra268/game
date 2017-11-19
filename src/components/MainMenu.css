@@ -1,0 +1,39 @@
+#mainMenu {
+  background-image: url(../assets/main_menu_bg.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+  height: 100vh;
+  width: 56.15vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+  padding: 0 3em;
+  box-sizing: border-box;
+  padding-top: 45vh;
+  padding-bottom: 5vh;
+}
+
+#mainMenu button {
+  font-size: 2em;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0.5em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1em;
+  transition: all 0.3s ease-out;
+  border: 1px solid;
+  width: 65%;
+}
+
+#mainMenu button:hover:not([disabled]) {
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+
+#mainMenu button[disabled] {
+  cursor: not-allowed;
+}
