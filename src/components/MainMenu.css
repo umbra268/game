@@ -15,7 +15,13 @@
   padding-bottom: 5vh;
 }
 
-#mainMenu button {
+#mainMenu .button {
+  color: black;
+  text-align: center;
+}
+
+#mainMenu .button {
+  font-family: unset;
   font-size: 1.5em;
   display: block;
   box-sizing: border-box;
@@ -25,14 +31,15 @@
   border-radius: 1em;
   transition: all 0.3s ease-out;
   border: 1px solid;
-  width: 15ex;
+  width: 17.5ex;
 }
 
-#mainMenu button:hover:not([disabled]) {
+#mainMenu .button:hover:not(.disabled) {
   background: rgba(255, 255, 255, 0.75);
   cursor: pointer;
 }
 
-#mainMenu button[disabled] {
+#mainMenu .button.disabled {
   cursor: not-allowed;
+  color: grey;
 }
