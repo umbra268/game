@@ -1,0 +1,46 @@
+#root {
+  overflow: hidden;
+}
+
+#character_select {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2em;
+  border: 5px double rgba(0, 0, 0, 0.5);
+  max-width: 65vh;
+  height: 80vh;
+  margin: 10vh auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #character_select {
+    flex-direction: column;
+    max-width: 75vw;
+  }
+}
+
+#character_select div {
+  width: 32px;
+  height: 48px;
+  transform: scale(4);
+  border: 0.25px solid black;
+  border-radius: 1em;
+  background-position-x: 0px;
+  animation: play_x 2s steps(4) infinite, play_y 16s steps(4) infinite;
+}
+
+@keyframes play_x {
+	100% { background-position-x: -128px; }
+}
+@keyframes play_y {
+	100% { background-position-y: -192px; }
+}
+
+#guy {
+  background-image: url('../assets/modernguy03.png');
+}
+#girl {
+  background-image: url('../assets/moderngirl02.png');
+}
