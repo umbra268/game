@@ -6,6 +6,7 @@ import ROUTES from './routes'
 import './index.css';
 
 import registerServiceWorker from './registerServiceWorker';
+import 'modernizr-loader!json-loader!./.modernizrrc.json';  //eslint-disable-line
 
 if ( process.env.NODE_ENV === 'development' ) {
   const Routes = ({ children }) => Object.entries(ROUTES).map(([key, component]) => <Route {...{ key, path: `/${key}`, component }} />).concat(children);
