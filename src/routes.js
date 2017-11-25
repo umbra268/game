@@ -30,6 +30,7 @@ function asyncComponent(importComponent) {
 
 const routes = {
   main_menu: MainMenu,
-  character_select: asyncComponent(() => import(/* webpackChunkName: 'character_select' */ './components/CharacterSelect'))
+  character_select: asyncComponent(() => import(/* webpackChunkName: 'character_select' */ './components/CharacterSelect')),
+  game: asyncComponent(() => import(/* webpackChunkName: 'game' */ './components/Game'))
 };
 export default routes;

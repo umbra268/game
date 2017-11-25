@@ -2,16 +2,30 @@
   overflow: hidden;
 }
 
-#character_select {
+#character_select, #character_confirm {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 2em;
   border: 5px double rgba(0, 0, 0, 0.5);
   max-width: 65vh;
   height: 80vh;
   margin: 10vh auto;
+  margin-bottom: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+#character_confirm {
+  flex-direction: column;
+  max-width: 30vw;
+  height: 40vh;
+  margin-top: 30vh;
+  justify-content: space-between;
+  padding: 1em 0;
+}
+
+#character_confirm input {
+  padding: 0.5em;
 }
 
 @media only screen and (max-width: 768px) {
@@ -21,14 +35,25 @@
   }
 }
 
-#character_select div {
+#character_select div, #character_confirm div {
   width: 32px;
   height: 48px;
   transform: scale(4);
-  border: 0.25px solid black;
+  border: 0.5px solid rgba(0,0,0,0.25);
   border-radius: 1em;
   background-position-x: 0px;
   animation: play_x 2s steps(4) infinite, play_y 16s steps(4) infinite;
+  transition: 1s;
+}
+
+#character_confirm div {
+  border: none;
+}
+
+#character_select div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  border-color: black;
 }
 
 @keyframes play_x {
