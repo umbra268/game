@@ -1,12 +1,12 @@
 {
-  "character_select.js": "static/js/character_select.1c04dde0.chunk.js",
-  "character_select.js.map": "static/js/character_select.1c04dde0.chunk.js.map",
-  "game.js": "static/js/game.cb952ce8.chunk.js",
-  "game.js.map": "static/js/game.cb952ce8.chunk.js.map",
+  "character_select.js": "static/js/character_select.3e5ef99d.chunk.js",
+  "character_select.js.map": "static/js/character_select.3e5ef99d.chunk.js.map",
+  "game.js": "static/js/game.e75748c9.chunk.js",
+  "game.js.map": "static/js/game.e75748c9.chunk.js.map",
   "main.css": "static/css/main.6127e07e.css",
   "main.css.map": "static/css/main.6127e07e.css.map",
-  "main.js": "static/js/main.e44cba69.js",
-  "main.js.map": "static/js/main.e44cba69.js.map",
+  "main.js": "static/js/main.454e2392.js",
+  "main.js.map": "static/js/main.454e2392.js.map",
   "static\\media\\main_menu_bg.png": "static/media/main_menu_bg.f4390221.png",
   "static\\media\\main_menu_bg.webp": "static/media/main_menu_bg.9dc209dc.webp"
 }
