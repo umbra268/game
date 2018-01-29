@@ -10,11 +10,8 @@ module.exports = function override(config, env) {
     new BundleAnalyzerPlugin({
       analyzerMode: 'static',
       openAnalyzer: false,
-      generateStatsFile: true,
-      reportFilename: '../report.html',
-      statsFilename: '../stats.json',
+      reportFilename: `${env === 'production' ? '../' : ''}build-analysis-${env || 'development'}.html`,
     }),
-    // new webpack.optimize.ModuleConcatenationPlugin(),
   ]);
 
   // do stuff with the webpack config...
