@@ -13,7 +13,6 @@ module.exports = function override(config, env) {
       reportFilename: `${env === 'production' ? '../' : ''}build-analysis-${env || 'development'}.html`,
     }),
   ]);
-
   // do stuff with the webpack config...
   return config;
 };
