@@ -4,3 +4,10 @@ body {
   background: linear-gradient(to bottom, rgb(19, 59, 51) 0%, rgb(58, 129, 121) 18%, rgb(28, 132, 140) 41%, rgb(2, 55, 53) 71%);
   height: 100vh;
 }
+
+#root {
+  overflow: hidden;
+  max-width: 65vh;
+  height: 100vh;
+  margin: 0 auto;
+}

@@ -1,12 +1,7 @@
-#root {
-  overflow: hidden;
-}
-
 #character_select, #character_confirm {
   background: rgba(255, 255, 255, 0.25);
   border-radius: 2em;
   border: 5px double rgba(0, 0, 0, 0.5);
-  max-width: 65vh;
   height: 80vh;
   margin: 10vh auto;
   margin-bottom: 0;
@@ -17,9 +12,10 @@
 
 #character_confirm {
   flex-direction: column;
-  max-width: 30vw;
   height: 50vh;
-  margin-top: 30vh;
+  margin: 0;
+  margin-top: 50vh;
+  transform: translateY(-50%);
   justify-content: space-between;
   padding: 1em 0;
 }

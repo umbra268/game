@@ -4,9 +4,8 @@ const Game = () => (
   <div
     style={{
       color: 'white',
-      marginLeft: '50vw',
+      marginLeft: '50%',
       marginTop: '50vh',
-      maxWidth: '30vw',
       transform: 'translate(-50%, -50%)',
       display: 'inline-block',
       padding: '1em',
